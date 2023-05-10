@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<!-- 
+<c: forEach items = "${memberDtos}" var="dto">
+
+ -->
+
+	<span th:each="dto ,status:${memberDtos}">
+		<span th:text=${dto.name}></span>
+		<span th:text=${dto.age}></span>
+		
+
+
+
+	</span>
+	
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Thymeleaf if 문 연습</title>
+</head>
+<body>
+	<span th:if="${memberDto.age}== 21" th:next ="홍길동"></span>
+	<span th:unless="${memberDto.age}== 21" th:next ="김유신"></span>
+</body>
+</html>
